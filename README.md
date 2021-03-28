@@ -1,16 +1,19 @@
 # app_template_menu001
 
-A new Flutter project.
+A Flutter package for easy implementation of curved navigation bar.
 
-## Getting Started
+dependencies:
+  curved_navigation_bar: ^0.3.7 #latest version
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Attributes 
+items: List of Widgets
+index: index of NavigationBar, can be used to change current index or to set initial index
+color: Color of NavigationBar, default Colors.white
+buttonBackgroundColor: background color of floating button, default same as color attribute
+backgroundColor: Color of NavigationBar's background, default Colors.blueAccent
+onTap: Function handling taps on items
+animationCurve: Curves interpolating button change animation, default Curves.easeOutCubic
+animationDuration: Duration of button change animation, default Duration(milliseconds: 600)
+height: Height of NavigationBar, min 0.0, max 75.0
+letIndexChange: Function which takes page index as argument and returns bool. If function returns false then page is not changed on button tap. It returns true by default\
